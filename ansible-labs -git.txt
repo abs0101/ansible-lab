@@ -185,6 +185,8 @@ localhost ansible_connection=local
 ansible all -m command -a "free -h"
 OR
 ansible all -a "free -h"
+//ansible node1 -a "shutdown -h now" #command for shutdown
+//ansible node1 -a "init 0" #command for shutdown
 
 # Create a user ansible-new in the 2 nodes + the control node
 # This creates the new user and the home directory /home/ansible-new
